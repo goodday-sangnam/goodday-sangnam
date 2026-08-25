@@ -1,0 +1,1512 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상남동 좋은데이 맛집 MAP</title>
+<style>
+:root{--sky:#32b5ec;--deep:#0a97d7;--soft:#eaf8ff;--gold:#f2b51f;--ink:#18384a;--muted:#718997;--line:#d9edf7;--white:#fff;--shadow:0 14px 34px rgba(24,148,201,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f9fdff,#edf9ff)}a{text-decoration:none;color:inherit}button,input{font:inherit}.wrap{max-width:720px;margin:0 auto;min-height:100vh;background:linear-gradient(180deg,#fbfeff,#effaff);box-shadow:0 0 40px rgba(19,113,151,.08);overflow:hidden}
+.hero{padding:14px 14px 2px;background:radial-gradient(circle at 12% 15%,rgba(255,255,255,.85) 0 5px,transparent 6px),radial-gradient(circle at 88% 20%,rgba(255,255,255,.55) 0 10px,transparent 11px),linear-gradient(180deg,#dff5ff,#eefaff);position:relative}.hero:before,.hero:after{content:"";position:absolute;border:1.5px solid rgba(48,176,229,.25);border-radius:50%}.hero:before{width:74px;height:74px;right:14px;top:38px}.hero:after{width:44px;height:44px;left:10px;bottom:22px}.hero-frame{max-width:390px;margin:0 auto;border-radius:22px;overflow:hidden;background:#fff;border:1px solid rgba(255,255,255,.95);box-shadow:0 16px 34px rgba(12,139,196,.18)}.hero-frame img{display:block;width:100%;height:auto}
+.intro{position:relative;z-index:3;margin:-16px 16px 0;padding:20px 18px;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border:1px solid #ddf0fa;border-radius:24px;box-shadow:var(--shadow)}.eyebrow{display:flex;align-items:center;gap:8px;color:var(--deep);font-size:12px;font-weight:900}.dot{width:9px;height:9px;border-radius:50%;background:linear-gradient(135deg,var(--sky),var(--deep));box-shadow:0 0 0 4px rgba(50,181,236,.11)}.intro h1{margin:9px 0 7px;font-size:28px;line-height:1.18;letter-spacing:-1px}.intro .blue{color:var(--deep)}.intro .gold{color:var(--gold)}.intro p{margin:0;color:var(--muted);font-size:14px;line-height:1.62}.actions{display:flex;gap:9px;margin-top:17px}.actions a{flex:1;text-align:center;padding:13px 10px;border-radius:14px;font-size:13px;font-weight:900}.actions .primary{color:#fff;background:linear-gradient(135deg,var(--sky),var(--deep));box-shadow:0 8px 18px rgba(20,158,215,.23)}.actions .secondary{color:var(--deep);background:#f5fbff;border:1px solid #d9effa}
+.content{padding:18px 16px 42px}.search{height:54px;background:#fff;border:1px solid var(--line);border-radius:17px;display:flex;align-items:center;padding:0 14px;box-shadow:0 6px 16px rgba(28,140,190,.06)}.search:before{content:"⌕";font-size:22px;color:var(--deep);margin-right:9px;transform:rotate(-20deg)}.search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font-size:14px}.section{margin-top:22px}.head{display:flex;align-items:flex-end;justify-content:space-between;margin:0 3px 12px}.title{font-size:20px;font-weight:900;letter-spacing:-.5px}.sub{font-size:12px;color:var(--muted)}
+.chips{display:flex;gap:8px;overflow:auto;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{flex:none;padding:10px 13px;border-radius:999px;border:1px solid #d9eef8;background:#fff;color:#557486;font-size:13px;font-weight:800;cursor:pointer}.chip.active{color:#fff;border-color:transparent;background:linear-gradient(135deg,var(--sky),var(--deep));box-shadow:0 7px 16px rgba(24,158,215,.17)}
+.feature{position:relative;overflow:hidden;padding:21px 19px;border-radius:24px;color:#fff;background:radial-gradient(circle at 88% 20%,rgba(255,255,255,.22) 0 18px,transparent 19px),radial-gradient(circle at 76% 66%,rgba(255,255,255,.13) 0 34px,transparent 35px),linear-gradient(135deg,#38bcef,#0a95d7);box-shadow:0 12px 26px rgba(13,143,202,.20)}.feature:after{content:"100%\A GOODDAY";white-space:pre;position:absolute;right:17px;bottom:17px;width:68px;height:68px;border-radius:50%;border:3px solid #f4c24d;background:linear-gradient(180deg,#fffef8,#fff7d9);color:#94680f;display:grid;place-items:center;text-align:center;font-size:10px;font-weight:900;line-height:1.15;box-shadow:0 6px 16px rgba(0,0,0,.12)}.feature .label{display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.19);font-size:11px;font-weight:900}.feature h2{margin:10px 0 6px;font-size:24px;letter-spacing:-.7px}.feature p{margin:0;max-width:68%;color:rgba(255,255,255,.86);font-size:14px;line-height:1.55}.feature a{display:inline-block;margin-top:16px;padding:11px 13px;background:#fff;color:var(--deep);border-radius:12px;font-size:13px;font-weight:900}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{position:relative;min-height:185px;display:flex;flex-direction:column;padding:15px;border-radius:20px;background:#fff;border:1px solid #dceff8;box-shadow:0 8px 20px rgba(28,133,178,.07);overflow:hidden}.card:before{content:"";position:absolute;width:64px;height:64px;right:-24px;top:-24px;border-radius:50%;background:rgba(49,181,238,.07)}.tag{font-size:11px;font-weight:900;color:var(--deep)}.card h3{margin:9px 0 6px;font-size:18px;letter-spacing:-.4px}.menu{font-size:13px;color:#405e70}.address{margin-top:4px;color:#8aa0ae;font-size:12px}.goodday-line{margin-top:9px;display:inline-flex;align-items:center;gap:6px;width:max-content;color:#258fbe;font-size:11px;font-weight:900}.goodday-line i{width:7px;height:7px;border-radius:50%;background:var(--sky)}.spacer{flex:1}.card-actions{display:flex;gap:7px;margin-top:14px}.smallbtn{flex:1;text-align:center;padding:10px 7px;border-radius:11px;border:1px solid #dceef7;background:#fafdff;color:#5b7685;font-size:12px;font-weight:900}.smallbtn.dark{color:#fff;border-color:transparent;background:linear-gradient(135deg,var(--sky),var(--deep))}.empty{display:none;padding:30px;text-align:center;background:#fff;border:1px dashed #bcdfee;border-radius:17px;color:#7c96a4}
+.closing{margin-top:24px;padding:20px;border-radius:23px;text-align:center;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.75) 0 6px,transparent 7px),linear-gradient(180deg,#e5f8ff,#f9fdff);border:1px solid #d6eef9}.closing .mini{color:var(--deep);font-size:11px;font-weight:900}.closing h3{margin:7px 0 5px;font-size:19px}.closing p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}.closing .gold{color:#b77a00;font-weight:900}footer{padding:4px 16px 30px;text-align:center;color:#91a5b1;font-size:11px;line-height:1.7}
+@media(max-width:430px){.hero{padding:10px 10px 0}.hero-frame{max-width:320px;border-radius:18px}.intro{margin:-12px 14px 0;padding:18px 16px}.intro h1{font-size:25px}.grid{grid-template-columns:1fr}.card{min-height:160px}}
+
+.random-picked{
+  border-color:#8fd9f7 !important;
+  box-shadow:0 12px 26px rgba(27,160,217,.16) !important;
+}
+.random-picked:after{
+  content:"GOODDAY PICK";
+  position:absolute;
+  right:12px;
+  top:12px;
+  padding:5px 7px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#f7c84c,#f0ae17);
+  color:#fff;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.2px;
+  box-shadow:0 4px 10px rgba(173,118,0,.16);
+}
+
+.brand-hero{
+  position:relative;
+  padding:14px 14px 0;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255,255,255,.70) 0 4px, transparent 5px),
+    radial-gradient(circle at 80% 15%, rgba(255,255,255,.48) 0 8px, transparent 9px),
+    linear-gradient(180deg,#dff6ff 0%,#eefaff 100%);
+  overflow:hidden;
+}
+.hero-frame{
+  max-width:420px;
+  margin:0 auto;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 16px 34px rgba(15,138,195,.18);
+  border:1px solid rgba(255,255,255,.9);
+  background:#fff;
+}
+.hero-frame img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+@media(max-width:430px){
+  .brand-hero{padding:10px 10px 0}
+  .hero-frame{max-width:330px;border-radius:18px}
+}
+
+.card-actions.single .smallbtn{
+  width:100%;
+  flex:1 1 100%;
+}
+
+.feature-actions{
+  display:flex;
+  gap:8px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+.feature-actions a{
+  margin-top:0 !important;
+  flex:1 1 180px;
+  text-align:center;
+}
+
+.intro{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px;
+}
+.intro-main{
+  flex:1 1 auto;
+  min-width:0;
+}
+.intro-promo{
+  flex:0 0 185px;
+  background:linear-gradient(180deg,#ffffff 0%, #f7fcff 100%);
+  border:1px solid #d7eef9;
+  border-radius:18px;
+  padding:12px 12px 11px;
+  box-shadow:0 10px 22px rgba(17,151,214,.10);
+  position:relative;
+}
+.intro-promo:before{
+  content:"EVENT";
+  position:absolute;
+  top:-10px;
+  right:12px;
+  background:linear-gradient(135deg,#34b9ef,#0b96da);
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.3px;
+  border-radius:999px;
+  padding:5px 9px;
+  box-shadow:0 6px 14px rgba(11,150,218,.25);
+}
+.intro-promo-title{
+  color:#0b96da;
+  font-size:12px;
+  font-weight:900;
+  margin:2px 0 8px;
+}
+.intro-bubble{
+  background:#fff;
+  border:1px solid #e3f2fa;
+  border-radius:14px;
+  padding:9px 10px;
+  font-size:11px;
+  line-height:1.45;
+  color:#35586d;
+  margin-bottom:8px;
+}
+.intro-bubble strong{
+  color:#163043;
+}
+.intro-bubble small{
+  display:block;
+  color:#7b96a6;
+  font-size:10px;
+  margin-top:3px;
+}
+.intro-reward{
+  text-align:center;
+  background:linear-gradient(135deg,#fff7da,#fff1b7);
+  border:1px solid #f3de82;
+  color:#8b5d00;
+  border-radius:14px;
+  padding:10px 8px;
+  font-size:11px;
+  line-height:1.35;
+  font-weight:800;
+}
+.intro-reward strong{
+  display:block;
+  font-size:14px;
+  color:#8b5d00;
+  margin-top:2px;
+}
+@media(max-width:600px){
+  .intro{
+    display:block;
+  }
+  .intro-promo{
+    margin-top:14px;
+    width:100%;
+  }
+}
+
+.intro-promo-image{
+  flex:0 0 190px;
+  padding:0 !important;
+  overflow:hidden;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid #d7eef9;
+  box-shadow:0 10px 22px rgba(17,151,214,.12);
+}
+.intro-promo-image:before{
+  display:none !important;
+}
+.intro-promo-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+@media(max-width:600px){
+  .intro-promo-image{
+    width:min(100%, 320px);
+    margin:16px auto 0;
+  }
+}
+
+/* 업소 상세보기 모달 */
+.detail-btn{
+  cursor:pointer;
+  font-family:inherit;
+}
+.store-modal{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:rgba(7,25,38,.72);
+  backdrop-filter:blur(7px);
+}
+.store-modal.open{
+  display:flex;
+}
+.store-modal-panel{
+  width:min(680px,100%);
+  max-height:90vh;
+  overflow:auto;
+  background:#fff;
+  border-radius:24px;
+  box-shadow:0 24px 70px rgba(0,0,0,.32);
+  border:1px solid rgba(214,238,249,.95);
+}
+.store-modal-head{
+  position:sticky;
+  top:0;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:16px 18px 14px;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #e4f1f7;
+}
+.store-modal-head h2{
+  margin:0;
+  font-size:22px;
+  letter-spacing:-.6px;
+  color:#163043;
+}
+.store-modal-close{
+  width:38px;
+  height:38px;
+  border:0;
+  border-radius:50%;
+  background:#eef8fd;
+  color:#147eae;
+  font-size:22px;
+  line-height:1;
+  cursor:pointer;
+}
+.store-modal-body{
+  padding:18px;
+}
+.store-gallery{
+  display:grid;
+  grid-template-columns:1.25fr .85fr;
+  gap:10px;
+}
+.store-gallery img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+  border-radius:17px;
+  border:1px solid #dceff8;
+  background:#eef7fb;
+}
+.store-gallery img:nth-child(2){
+  object-position:center;
+}
+.store-detail-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:17px;
+  padding:7px 10px;
+  border-radius:999px;
+  color:#0f91cb;
+  background:#ecf9ff;
+  border:1px solid #d3effb;
+  font-size:11px;
+  font-weight:900;
+}
+.store-detail-title{
+  margin:14px 0 6px;
+  font-size:27px;
+  font-weight:900;
+  color:#123e55;
+  letter-spacing:-.8px;
+}
+.store-detail-copy{
+  margin:12px 0 0;
+  padding:16px 17px;
+  color:#173f55;
+  font-size:18px;
+  line-height:1.65;
+  font-weight:800;
+  letter-spacing:-.25px;
+  background:linear-gradient(135deg,#f0faff 0%,#ffffff 100%);
+  border:1px solid #cfeaf7;
+  border-left:5px solid #20a9e6;
+  border-radius:15px;
+  box-shadow:0 8px 18px rgba(18,137,190,.08);
+}
+.store-detail-section{
+  margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid #e8f1f5;
+}
+.store-detail-section h3{
+  margin:0 0 10px;
+  font-size:16px;
+  color:#183e52;
+}
+.menu-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.menu-chip{
+  padding:9px 11px;
+  border-radius:999px;
+  background:#f4fbff;
+  border:1px solid #d9eef8;
+  color:#35647c;
+  font-size:13px;
+  font-weight:800;
+}
+.store-info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.store-info-item{
+  padding:13px;
+  border-radius:14px;
+  background:#f8fcfe;
+  border:1px solid #e1f1f8;
+}
+.store-info-item span{
+  display:block;
+  color:#8aa0ad;
+  font-size:11px;
+  margin-bottom:5px;
+  font-weight:800;
+}
+.store-info-item strong{
+  display:block;
+  color:#24495c;
+  font-size:13px;
+  line-height:1.5;
+}
+.store-modal-actions{
+  display:flex;
+  gap:8px;
+  margin-top:20px;
+}
+.store-modal-actions a,
+.store-modal-actions button{
+  flex:1;
+  padding:13px 10px;
+  border-radius:13px;
+  text-align:center;
+  font-size:13px;
+  font-weight:900;
+  cursor:pointer;
+  font-family:inherit;
+}
+.store-modal-actions .map{
+  color:#fff;
+  border:0;
+  background:linear-gradient(135deg,#34b9ef,#0b96da);
+}
+.store-modal-actions .close{
+  color:#487083;
+  border:1px solid #dceef7;
+  background:#f9fdff;
+}
+body.modal-open{
+  overflow:hidden;
+}
+@media(max-width:600px){
+  .store-modal{
+    padding:10px;
+    align-items:flex-end;
+  }
+  .store-modal-panel{
+    border-radius:22px 22px 12px 12px;
+    max-height:92vh;
+  }
+  .store-gallery{
+    grid-template-columns:1fr;
+  }
+  .store-gallery img{
+    height:220px;
+  }
+  .store-gallery img:nth-child(2){
+    height:260px;
+  }
+  .store-info-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .store-detail-copy{
+    font-size:17px;
+    padding:15px 15px;
+    line-height:1.62;
+  }
+  .store-detail-title{
+    font-size:25px;
+  }
+}
+
+/* 지도 앱 선택 모달 */
+.map-choice-btn,
+.detail-map-choice-btn{
+  font-family:inherit;
+  cursor:pointer;
+}
+.map-chooser{
+  position:fixed;
+  inset:0;
+  z-index:10050;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:rgba(7,25,38,.68);
+  backdrop-filter:blur(7px);
+}
+.map-chooser.open{
+  display:flex;
+}
+.map-chooser-panel{
+  width:min(430px,100%);
+  background:#fff;
+  border:1px solid #d9edf7;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 24px 70px rgba(0,0,0,.30);
+}
+.map-chooser-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:17px 18px 14px;
+  border-bottom:1px solid #e7f1f6;
+}
+.map-chooser-head h3{
+  margin:0;
+  font-size:19px;
+  color:#173f55;
+}
+.map-chooser-close{
+  width:36px;
+  height:36px;
+  border:0;
+  border-radius:50%;
+  background:#eef8fd;
+  color:#168ac1;
+  font-size:21px;
+  cursor:pointer;
+}
+.map-chooser-body{
+  padding:16px 18px 18px;
+}
+.map-chooser-store{
+  margin:0 0 4px;
+  font-size:18px;
+  font-weight:900;
+  color:#163f55;
+}
+.map-chooser-address{
+  margin:0 0 15px;
+  color:#78909f;
+  font-size:12px;
+  line-height:1.55;
+}
+.map-provider-list{
+  display:grid;
+  gap:9px;
+}
+.map-provider{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  width:100%;
+  padding:13px 14px;
+  border-radius:14px;
+  border:1px solid #dbeef7;
+  background:#fafdff;
+  color:#234f64;
+  font-size:14px;
+  font-weight:900;
+  text-decoration:none;
+  cursor:pointer;
+}
+.map-provider strong{
+  font-size:14px;
+}
+.map-provider span{
+  color:#8aa0ad;
+  font-size:11px;
+  font-weight:700;
+}
+.map-provider.naver{
+  border-color:#ccefd9;
+  background:#f4fff8;
+}
+.map-provider.kakao{
+  border-color:#f4e398;
+  background:#fffdf1;
+}
+.map-provider.device{
+  border-color:#d7e4ff;
+  background:#f6f9ff;
+}
+.map-chooser-note{
+  margin:13px 2px 0;
+  color:#8ba0ad;
+  font-size:10px;
+  line-height:1.55;
+}
+@media(max-width:600px){
+  .map-chooser{
+    align-items:flex-end;
+    padding:10px;
+  }
+  .map-chooser-panel{
+    border-radius:22px 22px 12px 12px;
+  }
+}
+
+/* 뽀뽀쪽갈비 상세보기 사진 슬롯 */
+.bbo-photo-slot{
+  position:relative;
+  width:100%;
+  min-height:220px;
+  border-radius:17px;
+  overflow:hidden;
+  border:1px solid #dceff8;
+  background:linear-gradient(135deg,#eef9fe,#ffffff);
+}
+.bbo-photo-slot img{
+  width:100%;
+  height:260px;
+  display:block;
+  object-fit:cover;
+}
+.bbo-photo-placeholder{
+  min-height:220px;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  gap:7px;
+  padding:20px;
+  color:#7893a1;
+}
+.bbo-photo-placeholder strong{
+  color:#315d73;
+  font-size:15px;
+}
+.bbo-photo-placeholder small{
+  font-size:11px;
+  line-height:1.55;
+}
+@media(max-width:600px){
+  .bbo-photo-slot img{height:230px;}
+}
+
+.map-chooser-cancel{
+  width:100%;
+  margin-top:11px;
+  padding:13px 14px;
+  border:1px solid #d7eaf4;
+  border-radius:14px;
+  background:#ffffff;
+  color:#567383;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:900;
+  cursor:pointer;
+}
+.map-chooser-cancel:active{
+  transform:translateY(1px);
+  background:#f4f9fc;
+}
+
+
+.extra-photo-slot{position:relative;width:100%;min-height:220px;border-radius:17px;overflow:hidden;border:1px solid #dceff8;background:linear-gradient(135deg,#eef9fe,#ffffff)}
+.extra-photo-slot img{width:100%;height:260px;display:block;object-fit:cover}.extra-photo-placeholder{min-height:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:7px;padding:20px;color:#7893a1}.extra-photo-placeholder strong{color:#315d73;font-size:15px}.extra-photo-placeholder small{font-size:11px;line-height:1.55;word-break:break-all}@media(max-width:600px){.extra-photo-slot img{height:230px}}
+
+
+.goodday-video-section{max-width:980px;margin:34px auto 18px;padding:0 16px;text-align:center}
+.goodday-video-title{margin:0 0 12px;font-size:20px;font-weight:900;color:#123b5d;letter-spacing:-.3px}
+.goodday-video-wrap{overflow:hidden;border-radius:20px;background:#000;box-shadow:0 10px 28px rgba(19,78,117,.16)}
+.goodday-video-wrap video{display:block;width:100%;height:auto;max-height:78vh;background:#000}
+@media(max-width:600px){
+.goodday-video-section{margin-top:26px;padding:0 12px}
+.goodday-video-title{font-size:18px}
+.goodday-video-wrap{border-radius:16px}}
+
+
+/* 상단 포스터 바로 아래 랜덤 자동재생 영상 */
+.goodday-video-section-top{
+  max-width:980px;
+  margin:18px auto 24px;
+  padding:0 16px;
+}
+.goodday-video-wrap-top{
+  overflow:hidden;
+  border-radius:20px;
+  background:#000;
+  box-shadow:0 10px 28px rgba(19,78,117,.16);
+}
+.goodday-video-wrap-top video{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:78vh;
+  object-fit:contain;
+  background:#000;
+}
+@media(max-width:600px){
+  .goodday-video-section-top{
+    margin:14px auto 20px;
+    padding:0 12px;
+  }
+  .goodday-video-wrap-top{
+    border-radius:16px;
+  }
+  .goodday-video-wrap-top video{
+    max-height:72vh;
+  }
+}
+
+</style>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G72JEC2L62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G72JEC2L62');
+</script>
+
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+  <div class="hero-frame">
+    <img src="./images/top_poster.jpg" alt="좋은데이 브랜드 이미지">
+  </div>
+</section>
+
+<section class="goodday-video-section-top" aria-label="좋은데이 랜덤 영상">
+  <div class="goodday-video-wrap-top">
+    <video id="gooddayRandomVideo" controls autoplay muted playsinline preload="auto" aria-label="좋은데이 홍보 영상">
+      <source src="./videos/goodday_15s.mp4" type="video/mp4">
+      이 브라우저에서는 동영상 재생을 지원하지 않습니다.
+    </video>
+  </div>
+</section>
+
+  <section class="intro">
+    <div class="intro-main">
+      <div class="eyebrow"><span class="dot"></span> GOODDAY × SANGNAM LOCAL MAP</div>
+      <h1><span class="blue">좋은데이와 함께하는</span><br>상남동 <span class="gold">맛집 MAP</span></h1>
+      <p>오늘 상남동에서 어디서 한잔할지 고민된다면,<br>좋은데이와 잘 어울리는 맛집을 골라보세요.</p>
+      <div class="actions"><a class="primary" href="#places">맛집 찾아보기</a><a class="secondary" href="#places" onclick="randomPick(); return false;">오늘의 GOODDAY PICK</a>
+      <a class="secondary" href="#places" onclick="randomNightPick(); return false;">2차 장소 추천</a></div>
+    </div>
+    <aside class="intro-promo intro-promo-image" aria-label="이벤트 참여 방법">
+      <img src="./images/event_guide.png?v=20260824-2" alt="이벤트 참여 방법 - 사장님께 좋은데이와 함께하는 상남동 맛집 MAP 화면을 보여주세요">
+    </aside>
+  </section>
+
+  <main class="content">
+    <div class="search"><input id="searchInput" placeholder="업소명 또는 대표메뉴 검색"></div>
+
+    <section class="section">
+      <div class="head"><div class="title">오늘 뭐 먹지?</div><div class="sub">분위기별로 골라보세요</div></div>
+      <div class="chips">
+        <button class="chip active" data-category="all">전체</button>
+        <button class="chip" data-category="고기">🥩 고기</button>
+        <button class="chip" data-category="닭구이">🍗 닭구이 전문 및 치킨</button>
+        <button class="chip" data-category="해산물">🌊 회·해산물</button>
+        <button class="chip" data-category="2차">🌙 2차 요리주점</button>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="head"><div class="title">GOODDAY PICK</div><div class="sub">오늘의 추천</div></div>
+      <div class="feature">
+        <span class="label">좋은데이와 함께 🍶</span>
+        <h2 id="pickTitle">오늘의 GOODDAY PICK 5</h2>
+        <p id="pickDesc">버튼을 누를 때마다 전체 업소 중 5곳을 랜덤으로 추천해드려요.</p>
+        <div class="feature-actions">
+        <a href="#places" onclick="randomPick(); return false;">랜덤 5곳 추천 →</a>
+        <a href="#places" onclick="randomNightPick(); return false;">2차 장소 추천 →</a>
+      </div>
+      </div>
+    </section>
+
+    <section class="section" id="places">
+      <div class="head"><div class="title">상남동 맛집</div><div class="sub"><span id="count">32</span>곳 표시</div></div>
+      <div class="grid">
+
+        <article class="card place" data-category="고기" data-search="뽀뽀쪽갈비 고기 고기 창원 상남동">
+          <div class="tag">🥩 고기</div>
+          <h3>뽀뽀쪽갈비</h3>
+          <div class="address">경상남도 창원시 성산구 마디미로37번길 5 삼정프라자 101호 뽀뽀쪽갈비</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single"><button class="smallbtn detail-btn" type="button" onclick="openBboDetail()">상세보기</button>
+            
+            <button class="smallbtn dark map-choice-btn" type="button" data-store="뽀뽀쪽갈비" data-address="경상남도 창원시 성산구 마디미로37번길 5 삼정프라자 101호 뽀뽀쪽갈비" data-naver="https://map.naver.com/p/search/%EB%BD%80%EB%BD%80%EC%AA%BD%EA%B0%88%EB%B9%84%20%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%84%B1%EC%82%B0%EA%B5%AC%20%EB%A7%88%EB%94%94%EB%AF%B8%EB%A1%9C37%EB%B2%88%EA%B8%B8%205%20%EC%82%BC%EC%A0%95%ED%94%84%EB%9D%BC%EC%9E%90%20101%ED%98%B8%20%EB%BD%80%EB%BD%80%EC%AA%BD%EA%B0%88%EB%B9%84">지도보기</button>
+          </div>
+        </article>
+
+        <article class="card place" data-category="2차" data-search="직감 2차 2차 요리주점 창원 상남동">
+          <div class="tag">🌙 2차 요리주점</div>
+          <h3>직감</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single"><button class="smallbtn detail-btn" type="button" onclick="openStoreDetail('직감')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button" data-store="직감" data-address="창원 상남동" data-naver="https://map.naver.com/p/search/%EC%A7%81%EA%B0%90%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+        <article class="card place" data-category="2차" data-search="월하주 2차 2차 요리주점 창원 상남동 빙수와 함께 분위기 맛집 빙수 차돌순두부짬뽕탕 우삼겹전골">
+          <div class="tag">🌙 2차 요리주점</div>
+          <h3>월하주</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single">
+            <button class="smallbtn detail-btn" type="button" onclick="openExtraStoreDetail('월하주')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button" data-store="월하주" data-address="창원 상남동" data-naver="https://map.naver.com/p/search/%EC%9B%94%ED%95%98%EC%A3%BC%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+
+        <article class="card place" data-category="고기" data-search="불향 고기 고기 창원 상남동 돼지고기 특수부위 전문점! 망고항정살 뒷고기 뒷통구이">
+          <div class="tag">🥩 고기</div>
+          <h3>불향</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single">
+            <button class="smallbtn detail-btn" type="button" onclick="openExtraStoreDetail('불향')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button" data-store="불향" data-address="창원 상남동" data-naver="https://map.naver.com/p/search/%EB%B6%88%ED%96%A5%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+
+        <article class="card place" data-category="2차" data-search="시월 2차 2차 요리주점 창원 상남동 비밀스러운 특수 감성 맛집 한우타다끼 모츠나베">
+          <div class="tag">🌙 2차 요리주점</div>
+          <h3>시월</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single">
+            <button class="smallbtn detail-btn" type="button" onclick="openExtraStoreDetail('시월')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button" data-store="시월" data-address="창원 상남동" data-naver="https://map.naver.com/p/search/%EC%8B%9C%EC%9B%94%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+
+        <article class="card place" data-category="2차" data-search="당나발포차 2차 2차 요리주점 창원 상남동 더 이상 이런 가성비는 없다! 최저의 가격으로 최고를 보장! 포뜬무늬오징어회 된장술밥">
+          <div class="tag">🌙 2차 요리주점</div>
+          <h3>당나발포차</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single">
+            <button class="smallbtn detail-btn" type="button" onclick="openExtraStoreDetail('당나발포차')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button" data-store="당나발포차" data-address="창원 상남동" data-naver="https://map.naver.com/p/search/%EB%8B%B9%EB%82%98%EB%B0%9C%ED%8F%AC%EC%B0%A8%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+
+        <article class="card place" data-category="고기"
+          data-search="마장돈 고기 고기 창원 상남동 얼마나 맛있을지 감도 안옴! 프리미엄 삼겹살 프리미엄 소갈비살 쫄깃통통 갈매기살">
+          <div class="tag">🥩 고기</div>
+          <h3>마장돈</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single">
+            <button class="smallbtn detail-btn" type="button" onclick="openExtraStoreDetail('마장돈')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button"
+              data-store="마장돈"
+              data-address="창원 상남동"
+              data-naver="https://map.naver.com/p/search/%EB%A7%88%EC%9E%A5%EB%8F%88%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+
+
+        <article class="card place" data-category="닭구이"
+          data-search="팔각도 닭구이 닭구이 전문 및 치킨 창원 상남동 프리미엄 숯불 닭 구이 전문 숯불 닭 갈비">
+          <div class="tag">🍗 닭구이 전문 및 치킨</div>
+          <h3>팔각도</h3>
+          <div class="address">창원 상남동</div>
+          <div class="goodday-line"><i></i> GOODDAY PLACE</div>
+          <div class="spacer"></div>
+          <div class="card-actions single">
+            <button class="smallbtn detail-btn" type="button" onclick="openExtraStoreDetail('팔각도')">상세보기</button>
+            <button class="smallbtn dark map-choice-btn" type="button"
+              data-store="팔각도"
+              data-address="창원 상남동"
+              data-naver="https://map.naver.com/p/search/%ED%8C%94%EA%B0%81%EB%8F%84%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도보기</button>
+          </div>
+        </article>
+
+
+
+      </div>
+      <div id="empty" class="empty">검색 조건에 맞는 업소가 없습니다.</div>
+    </section>
+
+
+
+
+    <section class="closing"><div class="mini">GOODDAY LOCAL GUIDE</div><h3>오늘도 상남동에서 <span class="gold">좋은데이</span></h3><p>좋은 음식 , 좋은 사람들과 함께 하루하루 좋은데이</p></section>
+  </main>
+  <footer>GOODDAY × SANGNAM LOCAL MAP<br>상남동 좋은데이 맛집 MAP</footer>
+</div>
+<script>
+let active = "all";
+
+function trackGA(eventName, params = {}){
+  if (typeof gtag === "function") {
+    gtag("event", eventName, params);
+  }
+}
+
+const cards = [...document.querySelectorAll(".place")];
+const chips = [...document.querySelectorAll(".chip")];
+const input = document.getElementById("searchInput");
+const count = document.getElementById("count");
+const empty = document.getElementById("empty");
+const pickTitle = document.getElementById("pickTitle");
+const pickDesc = document.getElementById("pickDesc");
+
+function setDefaultPickText(){
+  if (pickTitle) pickTitle.textContent = "오늘의 GOODDAY PICK 5";
+  if (pickDesc) pickDesc.textContent = "버튼을 누를 때마다 전체 업소 중 5곳을 랜덤으로 추천해드려요.";
+}
+
+function updateVisibleCount(){
+  const visible = cards.filter(c => c.style.display !== "none").length;
+  count.textContent = visible;
+  empty.style.display = visible ? "none" : "block";
+}
+
+function clearPickedState(){
+  cards.forEach(c => c.classList.remove("random-picked"));
+}
+
+function apply(){
+  const q = input.value.trim().toLowerCase();
+  clearPickedState();
+
+  cards.forEach(c => {
+    const ok1 = active === "all" || c.dataset.category.split(",").includes(active);
+    const ok2 = !q || c.dataset.search.toLowerCase().includes(q);
+    c.style.display = (ok1 && ok2) ? "flex" : "none";
+  });
+
+  updateVisibleCount();
+  setDefaultPickText();
+}
+
+function pick(cat){
+  active = cat;
+  chips.forEach(x => x.classList.toggle("active", x.dataset.category === cat));
+  trackGA("category_click", {
+    category_name: cat
+  });
+  apply();
+}
+
+function shuffle(arr){
+  const copy = [...arr];
+  for(let i = copy.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function showPickedCards(selected, title, desc){
+  input.value = "";
+  active = "all";
+  chips.forEach(x => x.classList.toggle("active", x.dataset.category === "all"));
+  clearPickedState();
+
+  const picked = new Set(selected);
+  cards.forEach(c => {
+    const show = picked.has(c);
+    c.style.display = show ? "flex" : "none";
+    if (show) c.classList.add("random-picked");
+  });
+
+  updateVisibleCount();
+  if (pickTitle) pickTitle.textContent = title;
+  if (pickDesc) pickDesc.textContent = desc;
+  document.getElementById("places").scrollIntoView({behavior:"smooth", block:"start"});
+}
+
+function randomPick(){
+  const selected = shuffle(cards).slice(0, Math.min(5, cards.length));
+  trackGA("goodday_pick_click", {
+    result_count: selected.length,
+    recommended_stores: selected.map(c => c.querySelector("h3")?.textContent?.trim() || "").join("|")
+  });
+  showPickedCards(
+    selected,
+    "오늘의 GOODDAY PICK " + selected.length,
+    "지금 추천된 " + selected.length + "곳입니다. 다시 누르면 새로운 업소가 랜덤으로 선정돼요."
+  );
+}
+
+function randomNightPick(){
+  const eligible = cards.filter(c => {
+    const cats = c.dataset.category.split(",");
+    return cats.includes("포차") || cats.includes("2차");
+  });
+
+  const selected = shuffle(eligible).slice(0, Math.min(5, eligible.length));
+  trackGA("night_pick_click", {
+    result_count: selected.length,
+    recommended_stores: selected.map(c => c.querySelector("h3")?.textContent?.trim() || "").join("|")
+  });
+  showPickedCards(
+    selected,
+    "2차 장소 추천 " + selected.length,
+    "2차 요리주점 카테고리에서 랜덤으로 " + selected.length + "곳을 추천해드려요. 다시 누르면 업소가 바뀝니다."
+  );
+}
+
+function showAllPlaces(){
+  input.value = "";
+  active = "all";
+  chips.forEach(x => x.classList.toggle("active", x.dataset.category === "all"));
+  clearPickedState();
+  cards.forEach(c => c.style.display = "flex");
+  updateVisibleCount();
+  setDefaultPickText();
+}
+
+window.pick = pick;
+window.randomPick = randomPick;
+window.randomNightPick = randomNightPick;
+window.showAllPlaces = showAllPlaces;
+
+chips.forEach(x => x.addEventListener("click", () => pick(x.dataset.category)));
+input.addEventListener("input", apply);
+
+
+let detailHistoryActive = false;
+let currentDetailModalId = null;
+
+function isAnyDetailOpen(){
+  return [
+    "storeDetailModal",
+    "bboDetailModal",
+    "extraStoreDetailModal"
+  ].some(id => document.getElementById(id)?.classList.contains("open"));
+}
+
+function pushDetailHistory(modalId, storeName){
+  currentDetailModalId = modalId;
+
+  // 상세보기를 스마트폰 '뒤로가기'가 먼저 처리하도록 임시 히스토리 단계 생성
+  if(!detailHistoryActive){
+    try{
+      history.pushState(
+        Object.assign({}, history.state || {}, {
+          gooddayDetail: modalId,
+          gooddayStore: storeName || ""
+        }),
+        "",
+        location.href
+      );
+      detailHistoryActive = true;
+    }catch(e){
+      detailHistoryActive = false;
+    }
+  }
+}
+
+function hideDetailModal(modalId){
+  const modal = document.getElementById(modalId);
+  if(modal){
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden","true");
+  }
+
+  const mapOpen = document.getElementById("mapChooser")?.classList.contains("open");
+  if(!mapOpen && !isAnyDetailOpen()){
+    document.body.classList.remove("modal-open");
+  }
+}
+
+function hideCurrentDetail(){
+  if(currentDetailModalId){
+    hideDetailModal(currentDetailModalId);
+  }else{
+    ["storeDetailModal","bboDetailModal","extraStoreDetailModal"].forEach(hideDetailModal);
+  }
+  currentDetailModalId = null;
+}
+
+function requestDetailClose(modalId){
+  currentDetailModalId = modalId;
+
+  // X/닫기/바깥영역도 상세보기용 히스토리 단계까지 같이 정리
+  if(detailHistoryActive && history.state?.gooddayDetail){
+    try{
+      history.back();
+      return;
+    }catch(e){}
+  }
+
+  hideDetailModal(modalId);
+  detailHistoryActive = false;
+  currentDetailModalId = null;
+}
+
+function openStoreDetail(storeName){
+  if(storeName !== "직감") return;
+  const modal = document.getElementById("storeDetailModal");
+  if(!modal) return;
+
+  pushDetailHistory("storeDetailModal", storeName);
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden","false");
+  document.body.classList.add("modal-open");
+
+  if(typeof trackGA === "function"){
+    trackGA("store_detail_view", {
+      store_name: storeName
+    });
+  }
+}
+
+function closeStoreDetail(){
+  requestDetailClose("storeDetailModal");
+}
+
+document.addEventListener("keydown", (e)=>{
+  if(e.key === "Escape"){
+    closeStoreDetail();
+  }
+});
+
+document.addEventListener("click", (e)=>{
+  const modal = document.getElementById("storeDetailModal");
+  if(modal && e.target === modal){
+    closeStoreDetail();
+  }
+});
+
+let mapChooserCurrent = null;
+let mapChooserHistoryActive = false;
+
+function isMapChooserOpen(){
+  return document.getElementById("mapChooser")?.classList.contains("open") || false;
+}
+
+function openMapChooser(store, address, naverUrl){
+  const chooser = document.getElementById("mapChooser");
+  if(!chooser) return;
+
+  mapChooserCurrent = {store, address, naverUrl};
+
+  const storeEl = document.getElementById("mapChooserStore");
+  const addressEl = document.getElementById("mapChooserAddress");
+  const naverEl = document.getElementById("mapNaverLink");
+  const kakaoEl = document.getElementById("mapKakaoLink");
+  const deviceEl = document.getElementById("mapDeviceLink");
+
+  if(storeEl) storeEl.textContent = store;
+  if(addressEl) addressEl.textContent = address;
+
+  const query = (store + " " + address).trim();
+  if(naverEl) naverEl.href = naverUrl;
+  if(kakaoEl) kakaoEl.href =
+    "https://map.kakao.com/link/search/" + encodeURIComponent(query);
+  if(deviceEl) deviceEl.href =
+    "geo:0,0?q=" + encodeURIComponent(query);
+
+  // 모바일 뒤로가기/취소로도 닫히도록 임시 히스토리 상태 추가
+  if(!isMapChooserOpen()){
+    try{
+      history.pushState(
+        Object.assign({}, history.state || {}, {gooddayMapChooser:true}),
+        "",
+        location.href
+      );
+      mapChooserHistoryActive = true;
+    }catch(e){
+      mapChooserHistoryActive = false;
+    }
+  }
+
+  chooser.classList.add("open");
+  chooser.setAttribute("aria-hidden","false");
+
+  if(typeof trackGA === "function"){
+    trackGA("map_chooser_open", {
+      store_name: store
+    });
+  }
+}
+
+function hideMapChooser(){
+  const chooser = document.getElementById("mapChooser");
+  if(!chooser) return;
+
+  chooser.classList.remove("open");
+  chooser.setAttribute("aria-hidden","true");
+
+  const detailOpen =
+    document.getElementById("storeDetailModal")?.classList.contains("open") ||
+    document.getElementById("bboDetailModal")?.classList.contains("open") ||
+    document.getElementById("extraStoreDetailModal")?.classList.contains("open");
+
+  if(!detailOpen){
+    document.body.classList.remove("modal-open");
+  }
+}
+
+function closeMapChooser(fromHistory=false){
+  hideMapChooser();
+
+  if(fromHistory){
+    mapChooserHistoryActive = false;
+    return;
+  }
+
+  if(mapChooserHistoryActive && history.state?.gooddayMapChooser){
+    mapChooserHistoryActive = false;
+    try{
+      history.back();
+    }catch(e){}
+  }else{
+    mapChooserHistoryActive = false;
+  }
+}
+
+// 지도 버튼은 DOM 생성 순서와 관계없이 이벤트 위임으로 처리
+document.addEventListener("click", (e)=>{
+  const openBtn = e.target.closest?.(".map-choice-btn, .detail-map-choice-btn");
+  if(openBtn){
+    e.preventDefault();
+    openMapChooser(
+      openBtn.dataset.store || "",
+      openBtn.dataset.address || "",
+      openBtn.dataset.naver || "#"
+    );
+    return;
+  }
+
+  // X 버튼 / 하단 취소 버튼
+  if(e.target.closest?.("#mapChooserClose, #mapChooserCancel")){
+    e.preventDefault();
+    e.stopPropagation();
+    closeMapChooser();
+    return;
+  }
+
+  // 어두운 바깥 배경을 터치해도 닫기
+  const chooser = document.getElementById("mapChooser");
+  if(chooser && e.target === chooser){
+    e.preventDefault();
+    closeMapChooser();
+    return;
+  }
+
+  // 지도 제공자 선택
+  const provider = e.target.closest?.(".map-provider");
+  if(provider){
+    let providerName = "device";
+    if(provider.id === "mapNaverLink") providerName = "naver";
+    if(provider.id === "mapKakaoLink") providerName = "kakao";
+
+    if(typeof trackGA === "function" && mapChooserCurrent){
+      trackGA("map_provider_click", {
+        store_name: mapChooserCurrent.store,
+        map_provider: providerName
+      });
+      trackGA("map_click", {
+        store_name: mapChooserCurrent.store,
+        map_provider: providerName
+      });
+    }
+
+    // 연결 프로그램/지도앱을 띄우기 전에 웹의 선택창부터 즉시 제거
+    hideMapChooser();
+  }
+});
+
+// Android 뒤로가기 / 브라우저 뒤로가기
+window.addEventListener("popstate", ()=>{
+  // 상세보기 안에서 지도선택까지 열었을 경우: 뒤로가기 1회 = 지도선택만 닫기
+  if(isMapChooserOpen() || mapChooserHistoryActive){
+    closeMapChooser(true);
+    return;
+  }
+
+  // 상세보기 상태에서 뒤로가기: 브라우저 이탈이 아니라 업소 목록으로 복귀
+  if(isAnyDetailOpen() || detailHistoryActive){
+    hideCurrentDetail();
+    detailHistoryActive = false;
+    return;
+  }
+});
+
+// PC Escape
+document.addEventListener("keydown", (e)=>{
+  if(e.key === "Escape" && isMapChooserOpen()){
+    closeMapChooser();
+  }
+});
+
+// 외부 앱 연결을 취소하고 돌아오는 경우에도 최종 복구
+function recoverMapChooserState(){
+  if(isMapChooserOpen()){
+    hideMapChooser();
+  }
+
+  // 지도앱을 선택해 외부로 나갔다 돌아온 경우 남은 임시 히스토리 정리
+  if(mapChooserHistoryActive && history.state?.gooddayMapChooser){
+    mapChooserHistoryActive = false;
+    try{
+      history.back();
+    }catch(e){}
+  }
+}
+
+window.addEventListener("pageshow", ()=>{
+  setTimeout(recoverMapChooserState, 50);
+});
+
+window.addEventListener("focus", ()=>{
+  setTimeout(recoverMapChooserState, 120);
+});
+
+document.addEventListener("visibilitychange", ()=>{
+  if(document.visibilityState === "visible"){
+    setTimeout(recoverMapChooserState, 120);
+  }
+});
+
+function openBboDetail(){
+  const modal = document.getElementById("bboDetailModal");
+  if(!modal) return;
+
+  pushDetailHistory("bboDetailModal", "뽀뽀쪽갈비");
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden","false");
+  document.body.classList.add("modal-open");
+
+  if(typeof trackGA === "function"){
+    trackGA("store_detail_view", {store_name:"뽀뽀쪽갈비"});
+  }
+}
+
+function closeBboDetail(){
+  requestDetailClose("bboDetailModal");
+}
+
+document.addEventListener("click", (e)=>{
+  const modal = document.getElementById("bboDetailModal");
+  if(modal && e.target === modal){
+    closeBboDetail();
+  }
+});
+
+document.addEventListener("keydown", (e)=>{
+  if(e.key === "Escape"){
+    closeBboDetail();
+  }
+});
+
+
+const EXTRA_STORE_DETAILS = {"월하주": {"name": "월하주", "category": "2차 요리주점", "description": "빙수와 함께 분위기 맛집", "menus": ["빙수", "차돌순두부짬뽕탕", "우삼겹전골"], "hours": "18:00 ~ 03:00", "phone": "정보 준비중", "address": "창원 상남동", "photos": ["month_interior.jpeg", "month_menu.jpeg"]}, "불향": {"name": "불향", "category": "고기", "description": "돼지고기 특수부위 전문점!", "menus": ["망고항정살", "뒷고기", "뒷통구이"], "hours": "17:00 ~ 24:00", "phone": "정보 준비중", "address": "창원 상남동", "photos": ["bul.interior.jpg", "bul.menu.jpg", "bul.menu1.jpg"]}, "시월": {"name": "시월", "category": "2차 요리주점", "description": "비밀스러운 특수 감성 맛집", "menus": ["한우타다끼", "모츠나베"], "hours": "18:00 ~ 02:00", "phone": "정보 준비중", "address": "창원 상남동", "photos": ["si.interior.jpg", "si.interior1.jpg", "si.menu.jpg"]}, "당나발포차": {"name": "당나발포차", "category": "2차 요리주점", "description": "더 이상 이런 가성비는 없다! 최저의 가격으로 최고를 보장!", "menus": ["포뜬무늬오징어회", "된장술밥"], "hours": "18:00 ~ 05:00", "phone": "010-7525-3654", "address": "창원 상남동", "photos": ["dang_interior1.jpeg", "dang_interior2.jpeg", "dang_menu.jpeg"]}, "마장돈": {"name": "마장돈", "category": "고기", "description": "얼마나 맛있을지 감도 안옴!", "menus": ["프리미엄 삼겹살", "프리미엄 소갈비살", "쫄깃통통 갈매기살"], "hours": "정보 준비중", "phone": "정보 준비중", "address": "창원 상남동", "photos": ["majangdon_interior.jpeg", "majangdon_menu.jpeg", "majangdon_menu1.jpeg"]}, "팔각도": {"name": "팔각도", "category": "닭구이 전문 및 치킨", "description": "프리미엄 숯불 닭 구이 전문", "menus": ["숯불 닭 갈비"], "hours": "정보 준비중", "phone": "정보 준비중", "address": "창원 상남동", "photos": ["pal_interior.jpeg", "pal_menu.jpeg", "pal_menu1.jpeg"]}};
+function renderExtraPhoto(storeName, filename){const slot=document.createElement("div");slot.className="extra-photo-slot";const img=document.createElement("img");img.src="./images/"+filename;img.alt=storeName+" 사진";img.loading="lazy";const p=document.createElement("div");p.className="extra-photo-placeholder";p.style.display="none";p.innerHTML="<strong>사진 준비중</strong><small>"+filename+"<br>images 폴더에 같은 파일명으로 넣으면 자동 표시됩니다.</small>";img.addEventListener("error",()=>{img.style.display="none";p.style.display="flex"});slot.appendChild(img);slot.appendChild(p);return slot}
+function openExtraStoreDetail(storeName){const store=EXTRA_STORE_DETAILS[storeName];const modal=document.getElementById("extraStoreDetailModal");if(!store||!modal)return;pushDetailHistory("extraStoreDetailModal",storeName);document.getElementById("extraDetailName").textContent=store.name;document.getElementById("extraDetailTitle").textContent=store.name;document.getElementById("extraDetailCopy").textContent=store.description||"소개글 준비중";document.getElementById("extraDetailBadge").textContent="GOODDAY PLACE · "+store.category;const g=document.getElementById("extraDetailGallery");g.innerHTML="";if(store.photos&&store.photos.length){store.photos.forEach(f=>g.appendChild(renderExtraPhoto(store.name,f)))}else{const slot=document.createElement("div");slot.className="extra-photo-slot";slot.innerHTML='<div class="extra-photo-placeholder"><strong>사진 준비중</strong><small>엑셀에 사진 파일명이 아직 등록되지 않았습니다.</small></div>';g.appendChild(slot)}const menus=document.getElementById("extraDetailMenus");menus.innerHTML="";(store.menus||[]).forEach(menu=>{const span=document.createElement("span");span.className="menu-chip";span.textContent=menu;menus.appendChild(span)});document.getElementById("extraDetailHours").textContent=store.hours||"정보 준비중";document.getElementById("extraDetailPhone").textContent=store.phone||"정보 준비중";document.getElementById("extraDetailAddress").textContent=store.address||"창원 상남동";const mapBtn=document.getElementById("extraDetailMapButton");const q=encodeURIComponent((store.name+" "+store.address).trim());mapBtn.dataset.store=store.name;mapBtn.dataset.address=store.address;mapBtn.dataset.naver="https://map.naver.com/p/search/"+q;modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.classList.add("modal-open");if(typeof trackGA==="function"){trackGA("store_detail_view",{store_name:store.name})}}
+function closeExtraStoreDetail(){requestDetailClose("extraStoreDetailModal")}
+document.addEventListener("click",e=>{if(e.target.closest?.("#extraDetailMapButton")){const b=document.getElementById("extraDetailMapButton");openMapChooser(b.dataset.store||"",b.dataset.address||"",b.dataset.naver||"#");return}const modal=document.getElementById("extraStoreDetailModal");if(modal&&e.target===modal)closeExtraStoreDetail()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeExtraStoreDetail()});
+
+
+const GOODDAY_RANDOM_VIDEOS = [
+  "./videos/goodday_15s.mp4",
+  "./videos/bluemoon.mp4",
+  "./videos/tocsoda.mp4"
+];
+
+let gooddayVideoIndex = -1;
+const gooddayRandomVideo = document.getElementById("gooddayRandomVideo");
+
+function pickNextGooddayVideo(){
+  if(!gooddayRandomVideo || !GOODDAY_RANDOM_VIDEOS.length) return;
+
+  let next = 0;
+  if(GOODDAY_RANDOM_VIDEOS.length > 1){
+    do{
+      next = Math.floor(Math.random() * GOODDAY_RANDOM_VIDEOS.length);
+    }while(next === gooddayVideoIndex);
+  }
+
+  gooddayVideoIndex = next;
+  gooddayRandomVideo.src = GOODDAY_RANDOM_VIDEOS[next];
+  gooddayRandomVideo.load();
+
+  const playPromise = gooddayRandomVideo.play();
+  if(playPromise && typeof playPromise.catch === "function"){
+    playPromise.catch(() => {
+      // 모바일 브라우저의 자동재생 정책에 막힌 경우 컨트롤에서 직접 재생 가능
+    });
+  }
+}
+
+if(gooddayRandomVideo){
+  // 첫 접속 자동재생은 브라우저 정책상 음소거가 가장 안정적
+  gooddayRandomVideo.muted = true;
+  gooddayRandomVideo.defaultMuted = true;
+
+  gooddayRandomVideo.addEventListener("ended", pickNextGooddayVideo);
+
+  // 접속할 때 첫 영상도 랜덤 선택
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", pickNextGooddayVideo, {once:true});
+  }else{
+    pickNextGooddayVideo();
+  }
+}
+
+</script>
+
+<div class="store-modal" id="storeDetailModal" aria-hidden="true">
+  <div class="store-modal-panel" role="dialog" aria-modal="true" aria-labelledby="storeDetailName">
+    <div class="store-modal-head">
+      <h2 id="storeDetailName">직감</h2>
+      <button class="store-modal-close" type="button" onclick="closeStoreDetail()" aria-label="닫기">×</button>
+    </div>
+    <div class="store-modal-body">
+      <div class="store-gallery">
+        <img src="./images/jikgam_interior.jpeg" alt="직감 매장 내부">
+        <img src="./images/jikgam_menu.jpeg" alt="직감 대표메뉴와 좋은데이">
+      </div>
+
+      <div class="store-detail-badge">GOODDAY PLACE · 2차 요리주점</div>
+      <h3 class="store-detail-title">직감</h3>
+      <p class="store-detail-copy">20~30대가 인정한 상남 최고의 포차</p>
+
+      <section class="store-detail-section">
+        <h3>대표메뉴</h3>
+        <div class="menu-list">
+          <span class="menu-chip">매운크림짬뽕</span>
+          <span class="menu-chip">한우대창 닭도리탕</span>
+          <span class="menu-chip">국물닭발</span>
+        </div>
+      </section>
+
+      <section class="store-detail-section">
+        <h3>매장 정보</h3>
+        <div class="store-info-grid">
+          <div class="store-info-item">
+            <span>영업시간</span>
+            <strong>17:00 ~ 02:00</strong>
+          </div>
+          <div class="store-info-item">
+            <span>전화번호</span>
+            <strong>정보 준비중</strong>
+          </div>
+        </div>
+      </section>
+
+      <div class="store-modal-actions">
+        <button class="close" type="button" onclick="closeStoreDetail()">닫기</button>
+        <button class="map detail-map-choice-btn" type="button" data-store="직감" data-address="경상남도 창원시 성산구 마디미동로 34 1층 102호" data-naver="https://map.naver.com/p/search/%EC%A7%81%EA%B0%90%20%EC%B0%BD%EC%9B%90%20%EC%83%81%EB%82%A8%EB%8F%99">지도 앱 선택</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="store-modal" id="bboDetailModal" aria-hidden="true">
+  <div class="store-modal-panel" role="dialog" aria-modal="true" aria-labelledby="bboDetailName">
+    <div class="store-modal-head">
+      <h2 id="bboDetailName">뽀뽀쪽갈비</h2>
+      <button class="store-modal-close" type="button" onclick="closeBboDetail()" aria-label="닫기">×</button>
+    </div>
+
+    <div class="store-modal-body">
+      <div class="store-gallery">
+        <div class="bbo-photo-slot">
+          <img src="./images/bbo_interior.jpeg" alt="뽀뽀쪽갈비 매장 사진"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="bbo-photo-placeholder">
+            <strong>사진 준비중</strong>
+            <small>bbo_interior.jpeg<br>images 폴더에 같은 파일명으로 넣으면 자동 표시됩니다.</small>
+          </div>
+        </div>
+
+        <div class="bbo-photo-slot">
+          <img src="./images/bbo_menu.jpeg" alt="뽀뽀쪽갈비 대표메뉴 사진"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="bbo-photo-placeholder">
+            <strong>사진 준비중</strong>
+            <small>bbo_menu.jpeg<br>images 폴더에 같은 파일명으로 넣으면 자동 표시됩니다.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="store-detail-badge">GOODDAY PLACE · 고기</div>
+      <h3 class="store-detail-title">뽀뽀쪽갈비</h3>
+      <p class="store-detail-copy">상남 최고의 쪽갈비 맛집!</p>
+
+      <section class="store-detail-section">
+        <h3>대표메뉴</h3>
+        <div class="menu-list">
+          <span class="menu-chip">쪽갈비</span>
+          <span class="menu-chip">통갈매기살</span>
+          <span class="menu-chip">벌집껍데기</span>
+        </div>
+      </section>
+
+      <section class="store-detail-section">
+        <h3>매장 정보</h3>
+        <div class="store-info-grid">
+          <div class="store-info-item">
+            <span>영업시간</span>
+            <strong>17:00 ~ 01:00</strong>
+          </div>
+          <div class="store-info-item">
+            <span>전화번호</span>
+            <strong>정보 준비중</strong>
+          </div>
+          <div class="store-info-item" style="grid-column:1 / -1;">
+            <span>주소</span>
+            <strong>경상남도 창원시 성산구 마디미로37번길 5 삼정프라자 101호 뽀뽀쪽갈비</strong>
+          </div>
+        </div>
+      </section>
+
+      <div class="store-modal-actions">
+        <button class="close" type="button" onclick="closeBboDetail()">닫기</button>
+        <button class="map" type="button"
+          onclick="openMapChooser('뽀뽀쪽갈비', '경상남도 창원시 성산구 마디미로37번길 5 삼정프라자 101호 뽀뽀쪽갈비', 'https://map.naver.com/p/search/%EB%BD%80%EB%BD%80%EC%AA%BD%EA%B0%88%EB%B9%84%20%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%84%B1%EC%82%B0%EA%B5%AC%20%EB%A7%88%EB%94%94%EB%AF%B8%EB%A1%9C37%EB%B2%88%EA%B8%B8%205%20%EC%82%BC%EC%A0%95%ED%94%84%EB%9D%BC%EC%9E%90%20101%ED%98%B8%20%EB%BD%80%EB%BD%80%EC%AA%BD%EA%B0%88%EB%B9%84')">지도 앱 선택</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="store-modal" id="extraStoreDetailModal" aria-hidden="true">
+  <div class="store-modal-panel" role="dialog" aria-modal="true" aria-labelledby="extraDetailName">
+    <div class="store-modal-head"><h2 id="extraDetailName">업소 상세보기</h2><button class="store-modal-close" type="button" onclick="closeExtraStoreDetail()" aria-label="닫기">×</button></div>
+    <div class="store-modal-body">
+      <div class="store-gallery" id="extraDetailGallery"></div>
+      <div class="store-detail-badge" id="extraDetailBadge">GOODDAY PLACE</div>
+      <h3 class="store-detail-title" id="extraDetailTitle"></h3>
+      <p class="store-detail-copy" id="extraDetailCopy"></p>
+      <section class="store-detail-section"><h3>대표메뉴</h3><div class="menu-list" id="extraDetailMenus"></div></section>
+      <section class="store-detail-section"><h3>매장 정보</h3><div class="store-info-grid">
+        <div class="store-info-item"><span>영업시간</span><strong id="extraDetailHours">정보 준비중</strong></div>
+        <div class="store-info-item"><span>전화번호</span><strong id="extraDetailPhone">정보 준비중</strong></div>
+        <div class="store-info-item" style="grid-column:1 / -1;"><span>주소</span><strong id="extraDetailAddress">창원 상남동</strong></div>
+      </div></section>
+      <div class="store-modal-actions"><button class="close" type="button" onclick="closeExtraStoreDetail()">닫기</button><button class="map" id="extraDetailMapButton" type="button">지도 앱 선택</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="map-chooser" id="mapChooser" aria-hidden="true">
+  <div class="map-chooser-panel" role="dialog" aria-modal="true" aria-labelledby="mapChooserTitle">
+    <div class="map-chooser-head">
+      <h3 id="mapChooserTitle">지도 앱 선택</h3>
+      <button class="map-chooser-close" type="button" id="mapChooserClose" aria-label="닫기">×</button>
+    </div>
+    <div class="map-chooser-body">
+      <p class="map-chooser-store" id="mapChooserStore"></p>
+      <p class="map-chooser-address" id="mapChooserAddress"></p>
+      <div class="map-provider-list">
+        <a class="map-provider naver" id="mapNaverLink" href="#" target="_blank" rel="noopener">
+          <strong>네이버지도</strong><span>검색 결과 열기</span>
+        </a>
+        <a class="map-provider kakao" id="mapKakaoLink" href="#" target="_blank" rel="noopener">
+          <strong>카카오맵</strong><span>검색 결과 열기</span>
+        </a>
+        <a class="map-provider device" id="mapDeviceLink" href="#">
+          <strong>티맵 등 설치 지도앱</strong><span>기기 앱 선택</span>
+        </a>
+      </div>
+      
+      <button class="map-chooser-cancel" id="mapChooserCancel" type="button">취소</button>
+
+      <p class="map-chooser-note">※ 기기 지도앱 선택은 안드로이드의 지도 URI 처리 앱을 이용합니다. 기기·브라우저 설정에 따라 선택창 동작이 다를 수 있습니다.</p>
+    </div>
+  </div>
+</div>
+
+</body></html>
